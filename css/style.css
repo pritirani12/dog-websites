@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s linear;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root{
+--color:#e67e22;
+--black:#130f40;
+--white:#fff;
+--light-color:#666;
+--light-bg:#eee;
+--border:.2rem solid var(--black);
+--box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+/* header starts  */
+header{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(../image/home_bg_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .navbar{
+    padding-top: 2rem;
+   
+}
+
+header #logo{
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+header ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:focus,a:hover{
+    color: var(--color);
+    text-decoration:none;
+}
+
+header .heading{
+    color: #fff;
+    margin-top: 200px;
+   
+}
+
+header .heading h1{
+   font-size: 6rem;
+   font-weight: 600;
+}
+
+header .heading h1 span{
+   color: var(--color);
+   
+ }
+ .btn{
+     width:140px;
+     height:40px;
+     cursor: pointer;
+     margin-top: 1rem;
+     border: none;
+     background: none;
+     border: 1px solid #fff;
+     font-size: 1.5rem;
+     position: relative;
+     left:90px;
+ }
+
+ .btn:hover{
+     background: var(--white);
+     border:none;
+ }
+
+ header img{
+     width:100%;
+     position: absolute;
+     bottom: 0;
+ }
+
+ .navbar-toggle span{
+   background-color:var(--white);
+}
+
+ .navbar-toggle{
+     border:1px solid var(--color);
+ }
+
+ /* header ends  */
+
+ /* home starts  */
+ section{
+     margin-top: 70px;
+ }
+ 
+ .about .content{
+     margin-top: 6rem;
+ }
+
+ .about .content h2{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .content h2 span{
+ color: var(--color);
+
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    line-height: 22px;
+  
+}
+
+.about .content .btn{
+    border: 1px solid var(--black);
+    margin-top: 2rem;
+    
+}
+
+.about .content .btn:hover{
+    color:#fff;
+    background: var(--black);
+    border: none;
+}
+ /* home ends  */
+ /* services starts */
+ .shop .content{
+     margin-top: 90px;
+     margin-left: 2rem;
+     position: relative;
+ }
+
+ .shop .content img{
+     overflow: hidden;
+     cursor: pointer;
+     z-index: 10;
+ }
+ 
+ .shop .content h1{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.shop .content img{
+    overflow: hidden;
+    transition: all .3s linear;
+    width:100%;
+}
+
+.shop .content img:hover{
+    transform: rotate(14deg);
+   
+}
+
+.shop .content h1 span{
+ color: var(--color);
+
+}
+
+.shop .content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    line-height: 22px;
+}
+.shop .content h5{
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.shop .content1{
+    margin-left: 20rem;
+  
+}
+  /* services ends */
+  /* products start */
+  .product h1{
+     font-weight: 600;
+}
+
+  .product span{
+      color: var(--color);
+  }
+
+  .product .box-container{
+      overflow: hidden;
+      position: relative;
+      margin-top: 2rem;
+     
+  }
+
+  .product .box-container .img{
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.product .box-container .img  img{
+    overflow: hidden;
+     width:100%;
+     height:100%;
+}
+
+.product .box-container .img  img:hover{
+   transform: scale(1.1);
+}
+
+.product .box-container .icon{
+    position: absolute;
+    top:0;
+    right:-7rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    z-index: 10;
+   
+  }
+
+  .product .box-container:hover .icon{
+    right:0rem;
+  }
+       
+
+  .product  .box-container .icon a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.product  .box-container .icon a:hover{
+    color: #fff;
+    background: var(--color);
+}
+
+.product .box-container h1{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.product .box-container p{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color);
+
+}
+  
+.product .box-container1{
+        background: var(--light-bg);
+        padding: 2rem 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+        margin-top: 2rem;
+}
+
+.product .box-container1 .btn:hover{
+    background: var(--black);
+    color: #fff;
+  
+}
+
+.product .box-container1 h1{
+    font-size: 2rem;
+  }
+  
+.product .one1{
+    border-radius: 79% 21% 81% 19% / 58% 93% 7% 42%;
+}
+
+.product .one2{
+    border-radius: 79% 21% 81% 19% / 58% 93% 7% 42%;
+}
+
+.product .one4{
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+}
+
+.product .one3{
+    border-radius: 79% 21% 81% 19% / 58% 93% 7% 42%;
+}
+
+.product .one5{
+    border-radius: 79% 21% 81% 19% / 58% 93% 7% 42%;
+}
+
+.product .box-container1:hover{
+     border-radius: 0;
+
+}
+
+/* products ends */
+/* Choose starts */
+.Choose h1{
+    font-weight: 700;
+}
+.Choose h1 span{
+    color: var(--color);
+
+}
+.Choose .box{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.Choose .box h4,h1{
+    text-align: center;
+}
+
+.Choose .box h4{
+  font-size: 2rem;
+  color: var(--color);
+  font-weight: 600; 
+}
+
+.Choose .box h1{
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    font-weight: 600;
+      
+  }
+
+  .Choose .box li{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+      
+  }
+
+  .Choose .box li i{
+    padding-right:1rem;
+       
+   }
+
+  .Choose .box span{
+    font-size: 4rem;
+    font-weight: 700;
+   }
+
+   .Choose .box .btn{
+      position: relative;
+      top:4rem;
+      border: 1px solid var(--black);
+      left: 5rem;
+      background-color: var(--white);
+   }
+
+   
+   .Choose .box .btn:hover{
+     background-color: var(--black);
+     color:var(--white) ;
+     border: 1px solid var(--white);
+ }
+
+/* Choose  ends */
+
+/* contant starts */
+.contact .contact-section{
+    margin-left: 40px;
+   
+}
+.contact .contact-section h1{
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.contact .contact-section  input, .contact .contact-section textarea{
+    width:80%;
+    border-bottom: 2px solid var(--black);
+    border-bottom: 0.2rem solid #130f40;
+    border-width: 0.1rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: #130f40;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+}
+
+.contact .contact-section .btn{
+    display: inline-block;
+    border: 1px solid var(--black);
+    width: 80%;
+    outline: none;
+    position: relative;
+    left:0px;
+}
+
+.contact .contact-section .btn:hover{
+    display: inline-block;
+    border: 1px solid var(--white);
+    background-color: #130f40;
+    color: var(--white);
+}
+
+/* contant ends */
+
+/* footer starts */
+footer{
+    width: 100%;
+    background-image: url(../image/footer_background.jpg);
+    position: relative;
+}
+
+
+footer img{
+    width: 100%;
+}
+
+footer .btn{
+    color: #fff;
+    position: relative;
+    left:0px;
+}
+
+footer h1{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+footer h1 span{
+    color: var(--color);
+}
+/* footer ends */
+
+@media(max-width:1200px){
+    header .btn{
+        position: relative;
+        left:300px;
+    }
+    .shop .content1 {
+        margin-left: 15rem;
+    }
+    
+}
+
+@media(max-width:751px){
+    header .btn{
+        position: relative;
+        left:200px;
+    }
+}
+
+@media(max-width:500px){
+    header .btn{
+        position: relative;
+        left:90px;
+    }
+    footer .btn {
+        width:120px;
+    }
+    header .heading h1{
+        font-size: 5rem;
+     }
+    
+}
+
+@media(max-width:1000px){
+    .shop .content1 {
+        margin-left: 2rem;
+    }
+    .Choose .box{
+        margin-top: 3rem;
+     }
+}
+
+@media(max-width:360px){
+    header .heading h1 {
+        font-size: 3rem;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 1rem;
+        border: none;
+        background: none;
+        border: 1px solid #fff;
+        font-size: 1.5rem;
+        position: relative;
+        left: 0px;
+    }
+    .about .content h2 {
+        font-size: 3rem;
+    }
+    .shop .content h1 {
+        font-size: 3rem;
+    }
+}
+
+
+   
+   
